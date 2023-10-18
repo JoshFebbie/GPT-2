@@ -1,38 +1,84 @@
+button {
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #132034;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
 .App {
-  text-align: center;
+    min-height: 100vh;
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar {
+    flex: 3;
+    border-right: 2px solid #1e997b;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main {
+    flex: 9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo {
+    margin-right: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.brand {
+    font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.upperSide {
+    padding: 2.5rem;
+    border-bottom: #1e997b 2px solid;
+    height: 70%;
+}
+
+.upperSideTop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.addBtn {
+    height: 2rem;
+    padding-right: 1rem;
+}
+
+.midBtn {
+    background-color: #132034;
+    border: 2px solid #1e997b;
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 570;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
+}
+
+.midBtn:hover {
+    background-color: #1e997b;
+    color: white;
+    transition: ease-in-out 0.3s;
+    color: #132034;
+    font-weight: bolder;
 }
