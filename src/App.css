@@ -3,8 +3,6 @@ button {
     font-family: "Poppins", sans-serif;
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +26,7 @@ body {
 
 .sidebar {
     flex: 3;
-    border-right: 2px solid #1e997b;
+    border-right: 1px solid #1e997b;
 }
 
 .main {
@@ -52,6 +50,7 @@ body {
 .upperSideTop {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 2.5rem;
 }
 
@@ -62,7 +61,7 @@ body {
 
 .midBtn {
     background-color: #132034;
-    border: 2px solid #1e997b;
+    border: 1px solid #1e997b;
     color: white;
     padding: 1.5rem;
     font-size: 1.5rem;
@@ -71,6 +70,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
     margin-bottom: 3rem;
     border-radius: 0.5rem;
 }
@@ -78,7 +78,79 @@ body {
 .midBtn:hover {
     background-color: #1e997b;
     color: white;
-    transition: ease-in-out 0.3s;
+    transition: ease all 0.2s;
     color: #132034;
     font-weight: bolder;
 }
+
+.query {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding: 1.5rem;
+    width: 25rem;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    border: 1px solid #1e997b;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 570;
+}
+
+.query:hover {
+    background-color: #1e997b;
+    color: white;
+    transition: ease all 0.2s;
+    color: #132034;
+    font-weight: bolder;
+}
+
+.query>img {
+    margin-right: 2rem;
+    object-fit: cover;
+    height: 1.75rem;
+}
+
+.lowerSide {
+    padding: 2rem;
+}
+
+.listItems {
+    margin: 0.75rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.75rem;
+    color: #1e997b;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.listItems:hover {
+    background-color: #1e997b;
+    color: white;
+    transition: ease all 0.2s;
+    color: #132034;
+    font-weight: bolder;
+}
+
+.listItems>img {
+    margin: 1rem;
+    padding-right: 1.50rem;
+}
+
+.listItems:nth-child(1)>img {
+    margin-right: 0.5rem;
+}
+
+.listItems:nth-child(3)>img {
+    margin-right: 0.75rem;
+}
+
+
+
+
+
+
+
+
+
