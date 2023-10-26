@@ -5,6 +5,9 @@ import msgIcon from './assets/message.svg';
 import home from './assets/home.svg';
 import saved from './assets/bookmark.svg';
 import rocket from './assets/rocket.svg';
+import sendBtn from './assets/send.svg';
+import userIcon from './assets/user_2.jpg';
+import gptImgLogo from './assets/gpticon2.png';
 
 function App() {
   return (
@@ -26,7 +29,20 @@ function App() {
         </div>
       </div>
       <div className='main'>
-        
+        <div className='chats'>
+          <div className="chat">
+            <img className='chatImg' src={userIcon} alt="" /><p className="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet accusamus omnis aliquid minus numquam iure pariatur repudiandae iste facere autem?</p>
+          </div>
+          <div className="chat bot">
+            <img className='chatImg' src={gptImgLogo} alt="" /><p className="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet accusamus omnis aliquid minus numquam iure pariatur repudiandae iste facere autem?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet accusamus omnis aliquid minus numquam iure pariatur repudiandae iste facere autem?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet accusamus omnis aliquid minus numquam iure pariatur repudiandae iste facere autem?</p>
+          </div>
+        </div>
+        <div className="chatFooter">
+          <div className='inp'>
+            <input type="text" placeholder='Send a message'/> <button className="send"><img src={sendBtn} alt="Send" /></button>
+          </div>
+            <p>ChatGPT may produce inaccurate information about people, places, or facts. ChatGPT August 20 Version.</p>
+        </div>
       </div>
     </div>
   );
