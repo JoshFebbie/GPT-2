@@ -80,16 +80,6 @@ export async function sendMsgToOpenAI(message) {
 
 
 
-// export async function sendMsgToOpenAI(message) {
-//   const res = await openai.completions.create({
-//     model: "gpt-3.5-turbo-instruct",
-//     prompt: message,
-//     max_tokens: 256,
-//     temperature: 0,
-//   });
 
-//     return res.data.choices[0].text;
-
-// }
 
 
